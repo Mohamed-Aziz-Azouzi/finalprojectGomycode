@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0c3873d805.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="contact">
+      <div class="phone">
+        <i class="fa-solid fa-phone"></i>
+        <p>+2329410049</p>
+      </div>
+      <div class="text">
+        <p>get 50% off on slected item || Shop now</p>
+      </div>
+    </div>
+
+    <!-- header section  -->
+
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h1>Sopping <span>cart</span></h1>
+      </div>
+
+      <!--  navbar  -->
+
+      <div class="navbar">
+        <ul>
+          <li><a href="">Categories</a></li>
+          <li><a href="">Deals</a></li>
+          <li><a href="">Whats New</a></li>
+          <li><a href="">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="icons">
+
+      <!-- search-icon -->
+
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"  onclick= "openBarsearch()"></i>
+      </div>
+
+      <!-- account Icon-->
+
+      <div class="account-Icon" onclick= "openAccountLog()">
+        <i class="fa-regular fa-user"></i>
+      </div>
+
+      <!-- shopping-card -->
+
+      <div class="shop-cart">
+      <i class="fa-solid fa-cart-plus "></i>
+      </div>
+      <i class="fa-solid fa-bars" id="menu"></i>
+      </div>
+
+      <!-- search-bar -->
+      <div class="search-bar">
+      <input type="text" name="" placeholder="Search here ...">
+    </div>
+    
+      <!-- account-sign-in  -->  
+    
+      <div class="loginNow">
+      <h2>LoginNow</h2>
+      <input type="email" placeholder="Your email..." >
+      <input type="password" placeholder="password">
+      <input type="submit" value="login" class="login-btn">
+      <p>Forget password <a href="#">Reeset Now</a></p>
+      <p>Dont have account <a href="#">Reeset Now</a></p>
+    </div>
+    </header>
+
+        <!-- marketing section -->
+
+    <div class="marketing-box">
+      <div class="context">
+        <h2>
+          Grab upto 50% OFF on <br />
+          selected headphone
+        </h2>
+        <button>Buy now</button>
+
+      </div>
+    </div>
+    <div class="more-info">
+      <select name="type" id="type"><option>Type Headphone</option></select>
+      <select name="price" ><option>Price</option></select>
+      <select name="review" ><option>Review</option></select>
+      <select name="color" ><option> Color</option></select>
+      <select name="Material"><option>Material</option></select>
+      <select name="offer"><option> Offer</option></select>
+      <select name="all filter"><option> All Filte</option>r</select>
+    </div>
+    <!-- headphone  -->
+    <div class="headpone-card">
+      <h1>Headphone For You!</h1>
+      <div class="cards">
+        </div>
+      </div>
+    </div>
+    <!-- shopping-card  -->
+    <div class="cart-buying">
+      <div class="flexCard">
+        <div class="text-card">
+          <h2>Your cards</h2>
+          <i class="fa-solid fa-x "></i>
+        </div>
+        <div class="listcards"></div>
+        <div class="totalePrice">Total Price: $0
+        </div>
+        <div class="checkout-btn">
+          <h3>Checkout</h3>
+        </div>
+      </div>
+    </div>
+    <script src="mains.js"></script>
+  </body>
+</html>

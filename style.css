@@ -19,11 +19,6 @@ body {
   overflow-x: hidden;
 }
 /* contact section */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 .contact {
   display: flex;
   align-items: center;
@@ -213,6 +208,9 @@ header > i::after {
   font-size: 1.3em;
   display: none;
 }
+
+/* home section */
+
 /* Marketing section */
 
 .marketing-box {

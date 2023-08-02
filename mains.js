@@ -108,7 +108,7 @@ function showProduct() {
           </figure>
           <div class="name-price">
             <h4>${value.namE}</h4>
-            <h4>${value.price}</h4>
+            <h4>$${value.price}</h4>
           </div>
           <p>${value.description}</p>
           <button onclick ="addToCard(${key})" class="dodo">Add to cart</button>
@@ -165,12 +165,12 @@ function reloadCard() {
         </figure>
         <div class="name-price space">
             <h4>${value.namE}</h4>
-            <h4>${value.price}</h4>
+            <h4>$${value.price}</h4>
         </div>
         <div class="plus-mines">
             <div class="plus"><i class="fa-solid fa-plus" onclick ="addQuantity(${key})"></i></div>
             <div class="mines" ><i class="fa-solid fa-minus" onclick ="minesQuantity(${key})"></i></div>
-            <div class="mini-totale"><p>${value.totalPrice}</p></div>
+            <div class="mini-totale"><p>$${value.totalPrice}</p></div>
         </div>
         `;
       listCards.appendChild(slectedItem);

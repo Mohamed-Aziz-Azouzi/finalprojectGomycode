@@ -26,6 +26,8 @@ body {
   color: #fff;
   height: 30px;
   padding: 0 8%;
+  position: relative;
+  z-index: 20;
 }
 .contact .phone {
   display: flex;
@@ -39,14 +41,16 @@ body {
 /* header section */
 header {
   position: sticky;
+  top: 0;
   background-color: #fff;
   width: 100vw;
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 7%;
+  padding: 0 7%;
   z-index: 10;
+  box-shadow: 0 2px 10px rgb(214, 214, 214);
 }
 header > * {
   flex-grow: 1;
@@ -57,6 +61,7 @@ header > * {
   display: flex;
   align-items: center;
   gap: 0.8em;
+  height: 100%;
 }
 .logo > h1 {
   font-weight: 900;
@@ -71,20 +76,32 @@ header > * {
   color: rgb(2, 66, 38);
 }
 /* navbar style  */
-
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
 .navbar > ul > li {
   list-style: none;
+  display: flex;
+  align-items: center;
   font-family: Work Sans;
   font-weight: 500;
+  height: 100%;
+  width: 25%;
+  justify-content: center;
+  position: relative;
 }
 .navbar > ul {
   display: flex;
-  gap: 6%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 .navbar a {
   text-decoration: none;
   color: black;
-  position: relative;
 }
 header > i {
   position: relative;
@@ -99,6 +116,9 @@ header > i::after {
   height: 100px;
   background-color: white;
 }
+.navbar li:hover {
+  background-color: rgba(242, 242, 242, 0.579);
+}
 .navbar a::after {
   content: "";
   position: absolute;
@@ -111,7 +131,7 @@ header > i::after {
   transform-origin: right;
   transition: transform 250ms ease-in;
 }
-.navbar a:hover::after {
+.navbar li:hover a::after {
   transform-origin: left;
   transform: scaleX(1);
 }
@@ -137,7 +157,6 @@ header > i::after {
   font-weight: 600;
   font-family: Rubik;
 }
-
 .search-bar.active {
   right: 2rem;
 }
@@ -210,30 +229,157 @@ header > i::after {
 }
 
 /* home section */
-
+.home {
+  position: relative;
+  height: 85vh;
+  transform: skewY(-6deg);
+  margin-top: -80px;
+  background-color: rgb(236, 236, 236);
+}
+.home img {
+  margin: 10% 32%;
+  width: 60%;
+  animation: up-down 2s linear infinite alternate;
+}
+.home-text {
+  transform: skewY(6deg);
+  width: 25%;
+  height: 200px;
+  margin: -34% 20%;
+}
+.home-text > h1 {
+  font-size: 3.2em;
+  font-family: Work Sans;
+  margin-bottom: 10px;
+}
+.home-text > h2 {
+  margin-left: 25px;
+  font-weight: 500;
+  font-family: Trirong;
+  color: rgb(139, 138, 138);
+}
+.home-text button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: rgb(203, 203, 203);
+  transition: 250ms ease;
+  margin: 20px 25%;
+  font-family: Work Sans;
+  font-size: 0.9em;
+}
+.home-text button:hover {
+  transform: scaleX(1.2);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+@keyframes up-down {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 /* Marketing section */
 
+.marketingSection {
+  height: 100vh;
+  padding: 100px;
+  margin: 150px 0;
+}
+.marketingSection > h1 {
+  font-size: 2em;
+  font-family: Work Sans;
+  margin: 40px;
+}
+.gridDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.spanRow {
+  grid-row: span 2;
+}
+.span {
+  grid-column: span 2;
+}
+.box1,
+.box1 button {
+  background-color: rgba(230, 181, 7, 0.3);
+  color: rgb(230, 181, 7);
+}
+.box2,
+.box2 button {
+  background-color: rgba(201, 67, 105, 0.3);
+  color: rgb(201, 67, 105);
+}
+.box3,
+.box3 button {
+  background-color: rgba(173, 92, 38, 0.3);
+  color: rgb(173, 92, 38);
+}
+.box4,
+.box4 button {
+  background-color: rgba(37, 168, 131, 0.3);
+  color: rgb(37, 168, 131);
+}
+.box5,
+.box5 button {
+  background-color: rgba(140, 142, 143, 0.3);
+  color: rgb(140, 142, 143);
+}
+.box1 :nth-child(2) {
+  color: rgb(200, 150, 15);
+  margin-top: 0.4em;
+}
+.box2 :nth-child(2) {
+  color: rgb(171, 8, 73);
+  margin-top: 0.4em;
+}
+.box3 :nth-child(2) {
+  color: rgb(128, 66, 5);
+  margin-top: 0.4em;
+}
+.box4 :nth-child(2) {
+  color: rgb(15, 105, 78);
+  margin-top: 0.4em;
+}
+.box5 :nth-child(2) {
+  color: rgb(105, 105, 105);
+  margin-top: 0.4em;
+}
+
+.marketing-box :nth-child(2) {
+  font-size: 2.5em;
+}
+.marketing-box :nth-child(1) {
+  font-size: 1.2em;
+  font-weight: 900;
+}
 .marketing-box {
-  margin: 20px 7%;
-  background-image: url(images/headphones-on-red-yellow-background-2830185.jpg);
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  height: 250px;
-  padding: 0 40px;
+  padding: 20px;
   display: flex;
   align-items: center;
+  border-radius: 0.8rem;
+  min-height: 250px;
+}
+.context img {
+  max-width: 100%;
+  max-height: 100px;
+}
+.marketing-box.box3 {
+  align-items: flex-start;
 }
 .marketing-box .context {
-  margin-left: 70%;
   font-family: Work Sans;
 }
 .context button {
-  background-color: rgb(2, 66, 38);
   border: none;
   border-radius: 20px;
   padding: 10px;
-  color: #fff;
   width: 130px;
   margin-top: 30px;
   font-family: Work Sans;
@@ -242,6 +388,172 @@ header > i::after {
 .context button:hover {
   transform: scale(1.1);
 }
+
+/* categories section */
+
+.categories-section {
+  height: 100vh;
+  margin: 250px 0;
+}
+.categories-section h1 {
+  font-size: 2em;
+  font-family: Work Sans;
+  margin: 30px 15%;
+}
+.categoriesFlex {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  align-items: center;
+  padding: 20px 10%;
+}
+.categories-box {
+  height: 800px;
+  border: 1px solid #ccc;
+  width: 365px;
+  overflow: hidden;
+}
+.image-container {
+  position: relative; /* Add relative positioning to the container */
+}
+.image-container > img {
+  max-height: 350px;
+  max-width: 100%;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+}
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-color: transparent transparent white transparent;
+  border-style: solid;
+  border-width: 0px 0px 170px 500px;
+  z-index: 3;
+  transition: 350ms ease;
+}
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3; /* Place the overlay in front of the image */
+}
+.one .overlay {
+  background-color: rgba(171, 8, 73, 0.3);
+}
+.two .overlay {
+  background-color: rgba(0, 150, 135, 0.3);
+}
+.three .overlay {
+  background-color: rgba(32, 163, 214, 0.3);
+}
+.layout {
+  position: relative;
+  z-index: 4;
+  height: 650px;
+  background-color: #fff;
+  transition: 250ms ease;
+}
+.categorie-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+.categorie-text h2 {
+  font-size: 2.4em;
+  font-family: Libre Franklin;
+  position: relative;
+}
+.categorie-text p {
+  font-size: 1em;
+  font-family: Libre Franklin;
+  padding: 35px;
+  line-height: 2;
+  color: #777;
+}
+.categorie-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: rgb(171, 8, 73);
+}
+.one h2::after {
+  background-color: rgb(171, 8, 73);
+}
+.two h2::after {
+  background-color: #009688;
+}
+.three h2::after {
+  background-color: rgb(32, 163, 214);
+}
+.categorie-text button {
+  font-size: 1em;
+  font-family: Libre Franklin;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.one .categorie-text button {
+  border: 3px solid rgba(171, 8, 73);
+  color: rgba(171, 8, 73);
+}
+.two .categorie-text button {
+  border: 3px solid rgb(0, 150, 135);
+  color: rgb(0, 150, 135);
+}
+.categorie-text button {
+  border: 3px solid rgb(32, 163, 214);
+  color: rgb(32, 163, 214);
+}
+
+.categorie-text button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 350ms ease;
+  z-index: -1;
+}
+.one button::after {
+  background-color: rgba(171, 8, 73);
+}
+.two button::after {
+  background-color: rgb(0, 150, 135);
+}
+.three button::after {
+  background-color: rgb(32, 163, 214);
+}
+.categories-box:hover .categorie-text button::after {
+  transform: scaleX(1);
+}
+.categories-box:hover .categorie-text button {
+  color: #fff;
+}
+
+.categories-box:hover .image-container::after {
+  border-width: 170px 500px 170px 0;
+}
+
 /* more info section */
 
 .more-info {
@@ -267,7 +579,7 @@ select {
 }
 .headpone-card > h1 {
   margin-bottom: 30px;
-  font-family: sans-serif;
+  font-family: Work Sans;
 }
 .cards {
   display: grid;
@@ -374,7 +686,7 @@ select {
   justify-content: space-between;
   gap: 1em;
   position: static;
-  z-index: 33399;
+  z-index: 339;
 }
 .cart-buying > i:hover {
   color: red;

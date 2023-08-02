@@ -93,6 +93,14 @@ let headphonesTypes = [
     color: "black",
     quantity: 1,
   },
+  {
+    image: "images/urbanears-pampas-bluetooth-black-removebg-preview.png",
+    namE: "UrbanEars",
+    price: 135.0,
+    description: "Pampas Bluetooth – Black",
+    color: "black",
+    quantity: 1,
+  },
 ];
 
 // showing the product in the page
@@ -215,3 +223,4 @@ function openAccountLog() {
   accountLogIn.classList.toggle("active");
   searchBar.classList.remove("active");
 }
+

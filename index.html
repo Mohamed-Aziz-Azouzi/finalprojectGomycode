@@ -39,32 +39,36 @@
           <li><a href="">Delivery</a></li>
         </ul>
       </div>
+      
       <div class="icons">
 
       <!-- search-icon -->
 
-      <div class="search-icon">
-        <i class="fa-solid fa-magnifying-glass"  onclick= "openBarsearch()"></i>
-      </div>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"  onclick= "openBarsearch()"></i>
+        </div>
 
       <!-- account Icon-->
 
-      <div class="account-Icon" onclick= "openAccountLog()">
-        <i class="fa-regular fa-user"></i>
-      </div>
+        <div class="account-Icon" onclick= "openAccountLog()">
+          <i class="fa-regular fa-user"></i>
+        </div>
 
-      <!-- shopping-card -->
+      <!-- shopping-Icon-->
 
-      <div class="shop-cart">
-      <i class="fa-solid fa-cart-plus "></i>
+        <div class="shop-cart">
+        <i class="fa-solid fa-cart-plus "></i>
+        </div>
+        <div class="barsIcon">
+          <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+      
       </div>
-      <i class="fa-solid fa-bars" id="menu"></i>
-      </div>
-
       <!-- search-bar -->
+
       <div class="search-bar">
       <input type="text" name="" placeholder="Search here ...">
-    </div>
+      </div>
     
       <!-- account-sign-in  -->  
     
@@ -75,10 +79,15 @@
       <input type="submit" value="login" class="login-btn">
       <p>Forget password <a href="#">Reeset Now</a></p>
       <p>Dont have account <a href="#">Reeset Now</a></p>
-    </div>
+      </div>
     </header>
+
+    <!-- home  -->
+
     <div class="home">
+      <div>
       <img src="images/3d-realistic-headphones-realistic-object-for-music-or-game-concept-poster-design-flyer-website-illustration-vector-removebg-preview.png" alt="">
+      </div>
       <div class="home-text">
         <h1>Shop Now</h1>
         <h2>New Arrival of Fresh Product</h2>
@@ -89,7 +98,7 @@
         <!-- marketing section -->
 
     <div class="marketingSection">
-      <h1>Offers For you!</h1>
+      <h1 class="Title">Offers For you!</h1>
       <div class="gridDiv">
         <div class="marketing-box span box1">
           <div class="context">
@@ -139,7 +148,7 @@
   <!-- Categories  -->
 
   <div class="categories-section">
-    <h1>Categories!</h1>
+    <h1 class="Title">Categories!</h1>
     <div class="categoriesFlex">
     <div class="categories-box one">
       <div class="image-container">
@@ -185,8 +194,6 @@
 
 
 
-
-
     </div>
     <div class="more-info">
       <select name="type" id="type"><option>Type Headphone</option></select>
@@ -197,14 +204,173 @@
       <select name="offer"><option> Offer</option></select>
       <select name="all filter"><option> All Filte</option>r</select>
     </div>
+
     <!-- headphone  -->
+
     <div class="headpone-card">
-      <h1>Headphone For You!</h1>
+      <h1 class="Title">Headphone For You!</h1>
       <div class="cards">
         </div>
       </div>
     </div>
+
+    <!-- commentaire-section  -->
+
+    <div class="commentaire-section">
+        <h1 class="Title">Customers Commentaire</h1>
+        <div class="content">
+          <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-06.png" alt="">
+              <h3>Benjamin</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            </div>
+          </div>
+              <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-05.png" alt="">
+              <h3>Noah Williams</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, saepe!</p>
+            </div>
+          </div>
+              <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-04.png" alt="">
+              <h3>Alexander</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem voluptatibus tenetur iste! Dolorem, cumque tenetur?</p>
+            </div>
+          </div>
+              <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-03.png" alt="">
+              <h3>Liam Lee</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+              <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-02.png" alt="">
+              <h3>Ethan Rodriguez</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum totam inventore possimus, iusto veritatis sint harum reiciendis?
+              </p>
+            </div>
+          </div>
+              <div class="commentaire-card">
+            <div class="front">
+              <img src="avatarImg/avatar-01.png" alt="">
+              <h3>Ava Johnson</h3>
+              <div class="stars">
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-solid fa-star filled"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="behind">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quia veritatis nobis libero tenetur dignissimos beatae aspernatur incidunt sunt quas, autem explicabo cum eligendi quasi?</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- footer-card  -->
+    <footer>
+      <div class="Footer-content">
+        <div class="socialMedia">
+          <h2>Sopping <span>cart</span></h2>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugit cumque quaerat laboriosam facere, velit ipsam maxime unde voluptatem iste!</p>
+        </div>
+        <div class="links">
+          <a href="">Important Link 1</a>
+          <a href="">Important Link 2</a>
+          <a href="">Important Link 3</a>
+          <a href="">Important Link 4</a>
+          <a href="">Important Link 5</a>
+        </div>
+        <div class="Footer-contact">
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>tunisia,</h3>
+          </div>
+          <div class="time">
+            <i class="far fa-clock fa-fw"></i>
+            <h3>Business Hours: From 10:00 To 18:00</h3>
+          </div>
+          <div class="number">
+            <i class="fa-solid fa-phone-volume"></i>
+            <h3>+2329410049<br>
+              +20198765432</h3>
+          </div>
+        </div>
+        <div class="payement">
+          <h2>Payement</h2>
+          <div class="card-icons">
+          <img src="cards Photo/visa_318-202971.avif" alt="">
+          <img src="cards Photo/pay-pal_318-674245.avif" alt="">
+          <img src="cards Photo/mastercard-og-image.png" alt="">
+          <img src="cards Photo/American-Express-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="copy-right"><h1>Made by Aziz</h1></div>
+    </footer>
+
+
     <!-- shopping-card  -->
+
+
     <div class="cart-buying">
       <div class="flexCard">
         <div class="text-card">

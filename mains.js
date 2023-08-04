@@ -122,15 +122,14 @@ function showProduct() {
           <button onclick ="addToCard(${key})" class="dodo">Add to cart</button>
         </div>`;
     cards.appendChild(card);
-    let select = document.getElementById("type");
-    let option = document.createElement("option");
-    option.textContent += `${value.namE}`;
-    select.appendChild(option);
   });
 }
 showProduct();
 let cardBuying = document.querySelector(".cart-buying");
-let cardBuyingg = [];
+let cardBuyingg = JSON.parse(localStorage.getItem("data")) || [];
+console.log(cardBuyingg);
+
+// add to card
 
 function addToCard(key) {
   if (cardBuyingg[key] == null) {
@@ -188,8 +187,43 @@ function reloadCard() {
 
   let totalePrice = document.querySelector(".totalePrice");
   totalePrice.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+  localStorage.setItem("data", JSON.stringify(cardBuyingg));
 }
 
+function displayCartItems() {
+  let listCards = document.querySelector(".listcards");
+  listCards.innerHTML = "";
+  let totalPrice = 0;
+
+  cardBuyingg.forEach(function (value, key) {
+    if (value != null) {
+      let slectedItem = document.createElement("div");
+      slectedItem.classList.add("add-card");
+      slectedItem.innerHTML += `
+        <figure class="add-img">
+            <img src="${value.image}">
+        </figure>
+        <div class="name-price space">
+            <h4>${value.namE}</h4>
+            <h4>$${value.price}</h4>
+        </div>
+        <div class="plus-mines">
+            <div class="plus"><i class="fa-solid fa-plus" onclick="addQuantity(${key})"></i></div>
+            <div class="mines"><i class="fa-solid fa-minus" onclick="minesQuantity(${key})"></i></div>
+            <div class="mini-totale"><p>$${value.totalPrice}</p></div>
+        </div>
+        `;
+      listCards.appendChild(slectedItem);
+      totalPrice += value.totalPrice;
+    }
+  });
+
+  let totalePrice = document.querySelector(".totalePrice");
+  totalePrice.textContent = `Total Price: $${totalPrice.toFixed(2)}`;
+}
+
+// Call the function to display the cart items when the page loads
+displayCartItems();
 /// showing the product in the add card
 
 let closeCard = document.getElementsByClassName("fa-x");
@@ -197,7 +231,6 @@ let openCard = document.getElementsByClassName("fa-cart-plus");
 let card = document.querySelector(".cards");
 let searchBar = document.querySelector(".search-bar");
 let searchIcon = document.querySelector(".fa-magnifying-glass");
-let accountLogIn = document.querySelector(".loginNow");
 
 closeCard[0].onclick = function () {
   cardBuying.style.left = "100%";
@@ -218,14 +251,32 @@ function changeHeartColor(heartIcon) {
 function openBarsearch() {
   searchBar.classList.toggle("active");
   accountLogIn.classList.remove("active");
+  accountSignup.classList.remove("active");
 }
 function openAccountLog() {
   accountLogIn.classList.toggle("active");
   searchBar.classList.remove("active");
+  accountSignup.classList.remove("active");
 }
 
 let header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("shadow", window.scrollY > 0);
+});
+let accountLogIn = document.querySelector(".loginNow");
+let accountSignup = document.querySelector(".sign-up");
+let signUp = document.querySelector("#signup"); // Fix the id selector
+let login = document.querySelector("#login");
+
+login.addEventListener("click", (e) => {
+  e.preventDefault();
+  accountSignup.classList.remove("active");
+  accountLogIn.classList.toggle("active");
+});
+
+signUp.addEventListener("click", (e) => {
+  e.preventDefault();
+  accountSignup.classList.toggle("active");
+  accountLogIn.classList.remove("active");
 });

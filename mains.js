@@ -101,6 +101,14 @@ let headphonesTypes = [
     color: "black",
     quantity: 1,
   },
+  {
+    image: "images/61xHHgU0bYL._AC_SL1500_-removebg-preview.png",
+    namE: "Sony WH1000XM4",
+    price: 272.22,
+    description: " premium wireless over-ear headphone",
+    color: "black",
+    quantity: 1,
+  },
 ];
 
 // showing the product in the page
@@ -111,8 +119,8 @@ function showProduct() {
     let card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML += `<figure class='image-product'>
-            <img src="${value.image}">
-            <i class="fa-solid fa-heart ff" onclick="changeHeartColor(this)"></i>
+            <img src="${value.image}">    
+            <i class="fa-solid fa-heart"onclick="changeHeartColor(this)"></i>
           </figure>
           <div class="name-price">
             <h4>${value.namE}</h4>
@@ -124,6 +132,13 @@ function showProduct() {
     cards.appendChild(card);
   });
 }
+
+let PinkHeart = document.querySelector(".fa-heart");
+
+function changeHeartColor(PinkHeart) {
+  PinkHeart.classList.toggle("pinkheart");
+}
+
 showProduct();
 let cardBuying = document.querySelector(".cart-buying");
 let cardBuyingg = JSON.parse(localStorage.getItem("data")) || [];
@@ -233,30 +248,24 @@ let searchBar = document.querySelector(".search-bar");
 let searchIcon = document.querySelector(".fa-magnifying-glass");
 
 closeCard[0].onclick = function () {
-  cardBuying.style.left = "100%";
-  card.classList.add("cards");
-  card.classList.remove("split");
+  cardBuying.style.right = "-100%";
 };
 
 openCard[0].onclick = function () {
-  cardBuying.style.left = "calc(100% - 35%)";
-  card.classList.add("split");
-  card.classList.remove("cards");
+  cardBuying.style.right = "0%";
 };
-
-function changeHeartColor(heartIcon) {
-  heartIcon.classList.toggle("pink-heart");
-}
 
 function openBarsearch() {
   searchBar.classList.toggle("active");
   accountLogIn.classList.remove("active");
   accountSignup.classList.remove("active");
+  responsiveNavBar.classList.remove("active");
 }
 function openAccountLog() {
   accountLogIn.classList.toggle("active");
   searchBar.classList.remove("active");
   accountSignup.classList.remove("active");
+  responsiveNavBar.classList.remove("active");
 }
 
 let header = document.querySelector("header");
@@ -279,4 +288,15 @@ signUp.addEventListener("click", (e) => {
   e.preventDefault();
   accountSignup.classList.toggle("active");
   accountLogIn.classList.remove("active");
+  responsiveNavBar.classList.remove("active");
+});
+
+let barIcon = document.querySelector("#menu");
+let responsiveNavBar = document.querySelector(".responsive-navBar");
+
+barIcon.addEventListener("click", () => {
+  responsiveNavBar.classList.toggle("active");
+  searchBar.classList.remove("active");
+  accountLogIn.classList.remove("active");
+  accountSignup.classList.remove("active");
 });

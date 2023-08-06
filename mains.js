@@ -60,11 +60,28 @@ let headphonesTypes = [
     quantity: 1,
   },
   {
+    image: "images/719nhErutkL._AC_SL1500_-removebg-preview.png",
+    namE: "JBL Charge 5 ",
+    price: 148,
+    description: "Elevate your audio experience with the JBL Charge 5",
+    color: "black",
+    quantity: 1,
+  },
+  {
     image: "images/detail_2000-removebg-preview.png",
     namE: "Lavender",
     price: 27.26,
     description:
       "Extra comfortable over-ear headphones for better noise cancellation.",
+    color: "red",
+    quantity: 1,
+  },
+  {
+    image: "images/61P+C8bAhaL._AC_SL1500_-removebg-preview.png",
+    namE: "JBL Flip 6",
+    price: 108,
+    description:
+      "Experience a new level of audio excellence with the JBL Flip 6",
     color: "red",
     quantity: 1,
   },
@@ -83,6 +100,15 @@ let headphonesTypes = [
     price: 60,
     description: "Wireless Bluetooth On-Ear Headset ",
     color: "white",
+    quantity: 1,
+  },
+  {
+    image: "images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png",
+    namE: "Marshall Emberton ",
+    price: 149,
+    description:
+      "Step into a world of iconic rock 'n' roll heritage with the Marshall Emberton ",
+    color: "back",
     quantity: 1,
   },
   {
@@ -107,6 +133,14 @@ let headphonesTypes = [
     price: 272.22,
     description: " premium wireless over-ear headphone",
     color: "black",
+    quantity: 1,
+  },
+  {
+    image: "images/61g5ZuoTK2L._AC_SL1500_-removebg-preview.png",
+    namE: "JBL Pulse 5 ",
+    price: 199,
+    description: "Experience music in a whole new light with JBL Pulse 5",
+    color: "yellow,red",
     quantity: 1,
   },
 ];

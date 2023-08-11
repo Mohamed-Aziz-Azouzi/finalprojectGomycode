@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/0c3873d805.js"
@@ -39,25 +43,24 @@
           <li><a href="">Delivery</a></li>
         </ul>
       </div>
-      
-      <div class="icons">
 
-      <!-- search-icon -->
+      <div class="icons">
+        <!-- search-icon -->
 
         <div class="search-icon">
-          <i class="fa-solid fa-magnifying-glass"  onclick= "openBarsearch()"></i>
+          <i class="fa-solid fa-magnifying-glass" onclick="openBarsearch()"></i>
         </div>
 
-      <!-- account Icon-->
+        <!-- account Icon-->
 
-        <div class="account-Icon" onclick= "openAccountLog()">
+        <div class="account-Icon" onclick="openAccountLog()">
           <i class="fa-regular fa-user"></i>
         </div>
 
-      <!-- shopping-Icon-->
+        <!-- shopping-Icon-->
 
         <div class="shop-cart">
-        <i class="fa-solid fa-cart-plus "></i>
+          <i class="fa-solid fa-cart-plus"></i>
         </div>
 
         <!-- navbar Icon  -->
@@ -70,46 +73,47 @@
       <!-- search-bar -->
 
       <div class="search-bar">
-      <input type="text" name="" placeholder="Search here ...">
+        <input type="text" name="" placeholder="Search here ..." />
       </div>
-    
-      <!-- account-sign-in  -->  
-    
+
+      <!-- account-sign-in  -->
+
       <div class="loginNow">
-      <h2>LoginNow</h2>
-      <input type="email" placeholder="Your email..." required>
-      <input type="password" placeholder="password" required>
-      <input type="submit" value="login" class="login-btn">
-      <p>Forget password <a href="#">Reeset Now</a></p>
-      <p>Dont have account <a href="#" id="signup">SignUP</a></p>
+        <h2>LoginNow</h2>
+        <input type="email" placeholder="Your email..." required />
+        <input type="password" placeholder="password" required />
+        <input type="submit" value="login" class="login-btn" />
+        <p>Forget password <a href="#">Reeset Now</a></p>
+        <p>Dont have account <a href="#" id="signup">SignUP</a></p>
       </div>
       <div class="sign-up">
-       <h2>Sign up Now</h2>
-        <input type="email" placeholder="Your email..." required>
-        <input type="password" placeholder="create password" required>
-        <input type="password" placeholder="confirm password" required>
-        <input type="submit" value="sign Up" class="sign-up-btn">
+        <h2>Sign up Now</h2>
+        <input type="email" placeholder="Your email..." required />
+        <input type="password" placeholder="create password" required />
+        <input type="password" placeholder="confirm password" required />
+        <input type="submit" value="sign Up" class="sign-up-btn" />
         <p>U have have account !<a href="#" id="login">login</a></p>
       </div>
 
       <!-- responsive navbar  -->
       <div class="responsive-navBar">
         <ul>
-        <li><a href="#categories-section">Categories</a></li>
-        <li><a href="#headpone-card">Deals</a></li>
-        <li><a href="">Whats New</a></li>
-        <li><a href="">Delivery</a></li>
-      </ul>
-
+          <li><a href="#categories-section">Categories</a></li>
+          <li><a href="#headpone-card">Deals</a></li>
+          <li><a href="">Whats New</a></li>
+          <li><a href="">Delivery</a></li>
+        </ul>
       </div>
-  
     </header>
 
     <!-- home  -->
 
     <div class="home">
       <div>
-      <img src="images/3d-realistic-headphones-realistic-object-for-music-or-game-concept-poster-design-flyer-website-illustration-vector-removebg-preview.png" alt="">
+        <img
+          src="images/3d-realistic-headphones-realistic-object-for-music-or-game-concept-poster-design-flyer-website-illustration-vector-removebg-preview.png"
+          alt=""
+        />
       </div>
       <div class="home-text">
         <h1>Shop Now</h1>
@@ -118,250 +122,382 @@
       </div>
     </div>
 
-        <!-- marketing section -->
+    <!-- marketing section -->
 
     <div class="marketingSection">
       <h1 class="Title">Popular Now</h1>
-      <div class="Marketing-content">
-        <div class="product-box">
+      <div class="sliderContainer">
+        <div class="Marketing-content">
+          <div class="product-box">
             <div class="product-text">
-            <h2>New</h2>
-            <h1>Beats Studio Buds +</h1>
-            <h2>$199.95</h2>
+              <h2>New</h2>
+              <h1>Beats Studio Buds +</h1>
+              <h2>$199.95</h2>
+            </div>
+            <img
+              src="images/pc-studiobudsplus-ivory-case-open-floating-removebg-preview.png"
+              alt=""
+            />
           </div>
-          <img src="images/pc-studiobudsplus-ivory-case-open-floating-removebg-preview.png" alt="">
-        </div>  
-        <div class="product-box">
+          <div class="product-box">
             <div class="product-text">
-            <h2>New</h2>
-            <h1>Beats</h1>
-            <h2>$60.9</h2>
+              <h2>New</h2>
+              <h1>Beats</h1>
+              <h2>$60.9</h2>
+            </div>
+            <img
+              src="images/61DqKs7xflL._SL1500_-removebg-preview.png"
+              alt=""
+            />
           </div>
-          <img src="images/61DqKs7xflL._SL1500_-removebg-preview.png" alt="">
+          <div class="product-box">
+            <div class="product-text">
+              <h2>New</h2>
+              <h1>Sony WH1000XM4</h1>
+              <h2>$272.22</h2>
+            </div>
+            <img
+              src="images/61xHHgU0bYL._AC_SL1500_-removebg-preview.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="product-box">
-            <div class="product-text">
-            <h2>New</h2>
-            <h1>Sony WH1000XM4</h1>
-            <h2>$272.22</h2>
-          </div>
-          <img src="images/61xHHgU0bYL._AC_SL1500_-removebg-preview.png" alt="">
+        <button class="slider-button left-button">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="slider-button right-button">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- marketing2  -->
+
+    <div class="marketing2">
+      <h1 class="Title">Make music listening to a magical experience</h1>
+      <div class="marketing2-content">
+        <div class="marketing-box">
+          <img
+            src="images/png-transparent-headphones-headset-electronics-desktop-wallpaper-audio-equipment-removebg-preview.png"
+            alt=""
+          />
+          <h3>Sepicial offers</h3>
+          <h4>Lorem ipsum amet adipisicing.</h4>
+        </div>
+        <div class="marketing-box">
+          <img src="images/3226778.png" alt="" />
+          <h3>Wireless</h3>
+          <h4>Lorem ipsum dolor sit, amet .</h4>
+        </div>
+        <div class="marketing-box">
+          <img
+            src="images/png-clipart-microphone-computer-icons-dictation-machine-microphone-electronics-microphone-removebg-preview.png"
+            alt=""
+          />
+          <h3>Noise Cancel</h3>
+          <h4>Lorem ipsum dolor, sit amet.</h4>
+        </div>
+        <div class="marketing-box">
+          <img src="images/téléchargement-removebg-preview.png" alt="" />
+          <h3>Extre Bass</h3>
+          <h4>Lorem dolor amet conect fegeh.</h4>
         </div>
       </div>
     </div>
-  
-  <!-- marketing2  -->
 
-  <div class="marketing2">
-    <h1 class="Title">Make music listening to a magical experience</h1>
-    <div class="marketing2-content">
-      <div class="marketing-box">
-        <img src="images/png-transparent-headphones-headset-electronics-desktop-wallpaper-audio-equipment-removebg-preview.png" alt="">
-        <h3>Sepicial offers</h3>
-        <h4>Lorem ipsum amet adipisicing.</h4>
-      </div>
-      <div class="marketing-box">
-        <img src="images/3226778.png" alt="">
-        <h3>Wireless</h3>
-        <h4>Lorem ipsum dolor sit, amet .</h4>
-      </div>
-      <div class="marketing-box">
-        <img src="images/png-clipart-microphone-computer-icons-dictation-machine-microphone-electronics-microphone-removebg-preview.png" alt="">
-        <h3>Noise Cancel</h3>
-        <h4>Lorem ipsum dolor, sit amet.</h4>
-      </div>
-      <div class="marketing-box">
-        <img src="images/téléchargement-removebg-preview.png" alt="">
-        <h3>Extre Bass</h3>
-        <h4>Lorem dolor amet conect fegeh.</h4>
-      </div>
-    </div>
-  </div>
+    <!-- Categories  -->
 
-  <!-- Categories  -->
+    <div class="categories-section" id="categories-section">
+      <h1 class="Title">Categories!</h1>
+      <div class="categoriesFlex">
+        <div class="categories-box one">
+          <div class="image-container">
+            <img
+              src="images/urbanears-pampas-bluetooth-black-removebg-preview.png"
+              alt=""
+            />
+            <div class="overlay"></div>
+          </div>
+          <div class="layout">
+            <div class="categorie-text">
+              <h2>Headphones</h2>
+              <p>
+                Immerse yourself in crystal-clear audio and feel the beats like
+                never before
+              </p>
+              <button>View Category</button>
+            </div>
+          </div>
+        </div>
+        <div class="categories-box two">
+          <div class="image-container">
+            <img
+              src="images/pc-studiobudsplus-ivory-case-open-floating-removebg-preview.png"
+              alt=""
+            />
+            <div class="overlay"></div>
+          </div>
+          <div class="layout">
+            <div class="categorie-text">
+              <h2>Earphones</h2>
+              <p>
+                Our revolutionary earphones redefine the way you listen to music
+                on the go
+              </p>
+              <button>View Category</button>
+            </div>
+          </div>
+        </div>
+        <div class="categories-box three">
+          <div class="image-container">
+            <img
+              src="images/61mQEw77sTS._AC_SL1152_-removebg-preview.png"
+              alt=""
+            />
+            <div class="overlay"></div>
+          </div>
+          <div class="layout">
+            <div class="categorie-text">
+              <h2>Speakers</h2>
+              <p>
+                Experience music like never before with our cutting-edge
+                speakers designed to elevate your audio journey
+              </p>
+              <button>View Category</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="categories-section" id="categories-section">
-    <h1 class="Title">Categories!</h1>
-    <div class="categoriesFlex">
-    <div class="categories-box one">
-      <div class="image-container">
-        <img src="images/urbanears-pampas-bluetooth-black-removebg-preview.png" alt="">
-        <div class="overlay"></div>
-      </div>
-      <div class="layout">
-      <div class="categorie-text">
-        <h2>Headphones</h2>
-        <p>Immerse yourself in crystal-clear audio and feel the beats like never before</p>
-        <button>View Category</button>
-      </div>
-      </div>
-    </div>
-    <div class="categories-box two">
-      <div class="image-container">
-        <img src="images/pc-studiobudsplus-ivory-case-open-floating-removebg-preview.png" alt="">
-        <div class="overlay"></div>
-      </div>
-      <div class="layout">
-      <div class="categorie-text">
-        <h2>Earphones</h2>
-        <p> Our revolutionary earphones redefine the way you listen to music on the go</p>
-        <button>View Category</button>
-      </div>
-    </div>
-    </div>
-    <div class="categories-box three">
-      <div class="image-container">
-        <img src="images/habib-dadkhah-S0B-pmGjdVA-unsplash-removebg-preview.png" alt="">
-        <div class="overlay"></div>
-      </div>
-      <div class="layout">
-      <div class="categorie-text">
-        <h2>Speakers</h2>
-        <p>Experience music like never before with our cutting-edge speakers designed to elevate your audio journey</p>
-        <button>View Category</button>
-      </div>
-      </div>
-    </div>
-    </div>
-  </div>
+    <!-- marketing -->
 
-
-  <!-- marketing2  -->
-  <div class="background">
-    <div class="Product-img"><img src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png" alt=""></div>
-    <div class="moreInfo">
-    <div class="Box1">
-      <picture class="frame">
-        <source media="(min-width: 768px)" data-srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w" srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w">        
-        <img src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png" alt="">
-      </picture>
-      <h1>SUPERIOR SIGNATURE SOUND</h1>
-      <h2>Rich, clear and loud, like the artist intended. Emberton utilises True Stereophonic, a unique form of multi-directional sound from Marshall. Experience absolute 360° sound where every spot is a sweet spot.</h2>
+    <div class="background">
+      <div class="Product-img">
+        <img src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png" alt="" />
+      </div>
+      <div class="moreInfo">
+        <div class="Box1">
+          <picture class="frame">
+            <source
+              media="(min-width: 768px)"
+              data-srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w"
+              srcset="
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=206&amp;sh=2000&amp;sm=fit   206w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=225&amp;sh=2000&amp;sm=fit   225w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=255&amp;sh=2000&amp;sm=fit   255w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=319&amp;sh=2000&amp;sm=fit   319w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=354&amp;sh=2000&amp;sm=fit   354w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=358&amp;sh=2000&amp;sm=fit   358w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=388&amp;sh=2000&amp;sm=fit   388w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=405&amp;sh=2000&amp;sm=fit   405w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=506&amp;sh=2000&amp;sm=fit   506w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=569&amp;sh=2000&amp;sm=fit   569w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=617&amp;sh=2000&amp;sm=fit   617w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=708&amp;sh=2000&amp;sm=fit   708w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=810&amp;sh=2000&amp;sm=fit   810w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dw44e32795/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-1.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w
+              "
+            />
+            <img
+              src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png"
+              alt=""
+            />
+          </picture>
+          <h1>SUPERIOR SIGNATURE SOUND</h1>
+          <h2>
+            Rich, clear and loud, like the artist intended. Emberton utilises
+            True Stereophonic, a unique form of multi-directional sound from
+            Marshall. Experience absolute 360° sound where every spot is a sweet
+            spot.
+          </h2>
+        </div>
+        <div class="Box2">
+          <picture class="frame">
+            <source
+              media="(min-width: 768px)"
+              data-srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w"
+              srcset="
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=206&amp;sh=2000&amp;sm=fit   206w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=225&amp;sh=2000&amp;sm=fit   225w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=255&amp;sh=2000&amp;sm=fit   255w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=319&amp;sh=2000&amp;sm=fit   319w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=354&amp;sh=2000&amp;sm=fit   354w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=358&amp;sh=2000&amp;sm=fit   358w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=388&amp;sh=2000&amp;sm=fit   388w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=405&amp;sh=2000&amp;sm=fit   405w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=506&amp;sh=2000&amp;sm=fit   506w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=569&amp;sh=2000&amp;sm=fit   569w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=617&amp;sh=2000&amp;sm=fit   617w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=708&amp;sh=2000&amp;sm=fit   708w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=810&amp;sh=2000&amp;sm=fit   810w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,
+                https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w
+              "
+            />
+            <img
+              src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png"
+              alt=""
+            />
+          </picture>
+          <h1>20+ HOURS OF PORTABLE PLAYTIME</h1>
+          <h2>
+            Emberton offers 20+ hours of portable playtime on a single charge.
+            Its compact size and rugged durability make it perfect to take with
+            you. Emberton can be quickly charged, with 20 minutes giving it a
+            playtime of 5 hours.
+          </h2>
+        </div>
+      </div>
     </div>
-    <div class="Box2">
-      <picture class="frame">
-        <source media="(min-width: 768px)" data-srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w" srcset="https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=206&amp;sh=2000&amp;sm=fit 206w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=225&amp;sh=2000&amp;sm=fit 225w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=255&amp;sh=2000&amp;sm=fit 255w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=319&amp;sh=2000&amp;sm=fit 319w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=354&amp;sh=2000&amp;sm=fit 354w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=358&amp;sh=2000&amp;sm=fit 358w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=388&amp;sh=2000&amp;sm=fit 388w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=405&amp;sh=2000&amp;sm=fit 405w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=506&amp;sh=2000&amp;sm=fit 506w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=569&amp;sh=2000&amp;sm=fit 569w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=617&amp;sh=2000&amp;sm=fit 617w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=708&amp;sh=2000&amp;sm=fit 708w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=810&amp;sh=2000&amp;sm=fit 810w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1012&amp;sh=2000&amp;sm=fit 1012w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1138&amp;sh=2000&amp;sm=fit 1138w,https://www.marshallheadphones.com/dw/image/v2/BCQL_PRD/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwf65fca05/images/categories/speakers/emberton/desktop/2-col_Emberton_USP-2.png?sw=1234&amp;sh=2000&amp;sm=fit 1234w">
-        <img src="images/61sSDlJmv2L._AC_SL1500_-removebg-preview.png" alt="">
-      </picture>
-      <h1>20+ HOURS OF PORTABLE PLAYTIME</h1>
-      <h2>Emberton offers 20+ hours of portable playtime on a single charge. Its compact size and rugged durability make it perfect to take with you. Emberton can be quickly charged, with 20 minutes giving it a playtime of 5 hours.</h2>
-    </div>
-    </div>
-  </div>
 
     <!-- headphone  -->
 
     <div class="headpone-card" id="headpone-card">
       <h1 class="Title">Headphone For You!</h1>
-      <div class="cards">
-        </div>
+      <div class="swiper slider1">
+        <div class="swiper-wrapper cards1"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <h1 class="Title">Earphones For You!</h1>
+      <div class="swiper slider2">
+        <div class="swiper-wrapper cards2"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <h1 class="Title">Speakers For You!</h1>
+      <div class="swiper slider3">
+        <div class="swiper-wrapper cards3"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
     </div>
 
     <!-- commentaire-section  -->
 
     <div class="commentaire-section">
-        <h1 class="Title">Customers Comments</h1>
-        <div class="content">
-          <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-06.png" alt="">
-              <h3>Benjamin</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      <h1 class="Title">Customers Comments</h1>
+      <div class="content">
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-06.png" alt="" />
+            <h3>Benjamin</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-regular fa-star"></i>
             </div>
           </div>
-              <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-05.png" alt="">
-              <h3>Noah Williams</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, saepe!</p>
-            </div>
-          </div>
-              <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-04.png" alt="">
-              <h3>Alexander</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem voluptatibus tenetur iste! Dolorem, cumque tenetur?</p>
-            </div>
-          </div>
-              <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-03.png" alt="">
-              <h3>Liam Lee</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
-              <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-02.png" alt="">
-              <h3>Ethan Rodriguez</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum totam inventore possimus, iusto veritatis sint harum reiciendis?
-              </p>
-            </div>
-          </div>
-              <div class="commentaire-card">
-            <div class="front">
-              <img src="avatarImg/avatar-01.png" alt="">
-              <h3>Ava Johnson</h3>
-              <div class="stars">
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-solid fa-star filled"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-            <div class="behind">
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quia veritatis nobis libero tenetur dignissimos beatae aspernatur incidunt sunt quas, autem explicabo cum eligendi quasi?</p>
-            </div>
+          <div class="behind">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
         </div>
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-05.png" alt="" />
+            <h3>Noah Williams</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="behind">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+              saepe!
+            </p>
+          </div>
+        </div>
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-04.png" alt="" />
+            <h3>Alexander</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="behind">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Exercitationem voluptatibus tenetur iste! Dolorem, cumque tenetur?
+            </p>
+          </div>
+        </div>
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-03.png" alt="" />
+            <h3>Liam Lee</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="behind">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-02.png" alt="" />
+            <h3>Ethan Rodriguez</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+            </div>
+          </div>
+          <div class="behind">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              totam inventore possimus, iusto veritatis sint harum reiciendis?
+            </p>
+          </div>
+        </div>
+        <div class="commentaire-card">
+          <div class="front">
+            <img src="avatarImg/avatar-01.png" alt="" />
+            <h3>Ava Johnson</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-solid fa-star filled"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="behind">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Cupiditate quia veritatis nobis libero tenetur dignissimos beatae
+              aspernatur incidunt sunt quas, autem explicabo cum eligendi quasi?
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- footer-card  -->
@@ -375,7 +511,11 @@
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-youtube"></i>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fugit cumque quaerat laboriosam facere, velit ipsam maxime unde voluptatem iste!</p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
+            fugit cumque quaerat laboriosam facere, velit ipsam maxime unde
+            voluptatem iste!
+          </p>
         </div>
         <div class="links">
           <a href="">Important Link 1</a>
@@ -395,41 +535,42 @@
           </div>
           <div class="number">
             <i class="fa-solid fa-phone-volume"></i>
-            <h3>+2329410049<br>
-              +20198765432</h3>
+            <h3>
+              +2329410049<br />
+              +20198765432
+            </h3>
           </div>
         </div>
         <div class="payement">
           <h2>Payement</h2>
           <div class="card-icons">
-          <img src="cards-Photo/visa_318-202971.avif" alt="">
-          <img src="cards-Photo/pay-pal_318-674245.avif" alt="">
-          <img src="cards-Photo/mastercard-og-image.png" alt="">
-          <img src="cards-Photo/American-Express-logo.png" alt="">
+            <img src="cards-Photo/visa_318-202971.avif" alt="" />
+            <img src="cards-Photo/pay-pal_318-674245.avif" alt="" />
+            <img src="cards-Photo/mastercard-og-image.png" alt="" />
+            <img src="cards-Photo/American-Express-logo.png" alt="" />
           </div>
         </div>
       </div>
       <div class="copy-right"><h1>Made by Aziz</h1></div>
     </footer>
 
-
     <!-- shopping-card  -->
-
 
     <div class="cart-buying">
       <div class="flexCard">
         <div class="text-card">
           <h2>Your cards</h2>
-          <i class="fa-solid fa-x "></i>
+          <i class="fa-solid fa-x"></i>
         </div>
         <div class="listcards"></div>
-        <div class="totalePrice">Total Price: $0
-        </div>
+        <div class="totalePrice">Total Price: $0</div>
         <div class="checkout-btn">
-          <h3>Checkout</h3>
+          <h3>Confirm Order</h3>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="mains.js"></script>
   </body>
 </html>
